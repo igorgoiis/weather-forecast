@@ -16,8 +16,8 @@
       "@screens/*": [
         "./src/screens/*"
       ],
-      "@storage/*": [
-        "./src/storage/*"
+      "@store/*": [
+        "./src/store/*"
       ],
       "@utils/*": [
         "./src/utils/*"
@@ -28,8 +28,11 @@
       "@hooks/*": [
         "./src/hooks/*"
       ],
-      "@contexts/*": [
-        "./src/contexts/*"
+      "@theme/*": [
+        "./src/theme/*"
+      ],
+      "@interfaces/*": [
+        "src/interfaces/*"
       ]
     }
   }

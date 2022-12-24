@@ -1,9 +1,11 @@
 import { StatusBar } from 'react-native';
+import { Provider } from 'react-redux';
 import { NativeBaseProvider } from 'native-base';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import { Loading } from '@components/Loading';
-import { THEME } from './src/theme';
 import { Main } from '@screens/main';
+import { store } from '@store/index';
+import { THEME } from '@theme/index';
 
 const nativeBaseConfig = {
   dependencies: {
@@ -13,16 +15,17 @@ const nativeBaseConfig = {
 };
 
 export default function App() {
-
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
   return (
-    <NativeBaseProvider theme={THEME} config={nativeBaseConfig}>
-      <StatusBar
-        barStyle="dark-content"
-        backgroundColor="transparent"
-        translucent
-      />
-      {fontsLoaded ? <Main /> : <Loading />}
-    </NativeBaseProvider>
+    <Provider store={store}>
+      <NativeBaseProvider theme={THEME} config={nativeBaseConfig}>
+        <StatusBar
+          barStyle="dark-content"
+          backgroundColor="transparent"
+          translucent
+        />
+        {fontsLoaded ? <Main /> : <Loading />}
+      </NativeBaseProvider>
+    </Provider>
   );
 }
