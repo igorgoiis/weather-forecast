@@ -1,4 +1,5 @@
-module.exports = function(api) {
+/* eslint-disable no-undef */
+module.exports = function (api) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],
@@ -8,19 +9,26 @@ module.exports = function(api) {
         {
           root: ['./src'],
           alias: {
-            '@dtos': './src/dtos',
-            '@assets': './src/assets',
             '@components': './src/components',
             '@screens': './src/screens',
             '@store': './src/store',
             '@utils': './src/utils',
             '@services': './src/services',
-            '@hooks': './src/hooks',
             '@theme': './src/theme',
-            '@interfaces': './src/interfaces'
+            '@interfaces': './src/interfaces',
+            '@assets': './src/assets'
           }
-        },
+        }
       ],
-    ],
+      [
+        'module:react-native-dotenv',
+        {
+          envName: 'APP_ENV',
+          moduleName: '@env',
+          path: '.env'
+        }
+      ],
+      ['react-native-reanimated/plugin']
+    ]
   };
 };

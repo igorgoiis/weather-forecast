@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 3.1.1"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "development": {
+      "distribution": "internal"
+    },
+    "production": {
+      "env": {
+        "API_KEY": "95c3b51440f1443c69fd9ef27e6126d2"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

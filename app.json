@@ -1,10 +1,35 @@
 {
   "expo": {
-    "name": "weather-forecast",
+    "name": "Weather Forecast",
     "slug": "weather-forecast",
     "version": "1.0.0",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#005DB4 "
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png"
+      }
+    },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "plugins": [
+      "expo-community-flipper",
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "PORTRAIT_UP"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a7be8f64-9287-4a2a-a4b0-42c1bed52e12"
+      }
+    }
   }
 }

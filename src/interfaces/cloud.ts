@@ -1,3 +1,3 @@
 export interface ICloud {
-  all: number
+  all: number;
 }
