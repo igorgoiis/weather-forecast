@@ -62,4 +62,4 @@ npx expo start
 
 Você também pode baixar e intalar o .apk no seu smartphone clicando [aqui](https://expo.dev/artifacts/eas/sj7dMBQQQBfuRw2RczHSxA.apk)
 
-[⬆ Voltar ao topo](/#weather-forecast)<br>
+[⬆ Voltar ao topo](https://github.com/igorgoiis/weather-forecast/edit/main/README.md#-weather-forecast)<br>
