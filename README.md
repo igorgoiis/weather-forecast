@@ -39,6 +39,7 @@
 * Para rodar o projeto você precisará utilizar o `npx expo`
 * Instale o app Expo Go no seu smartphone.
 * **Obs: Esté projeto só foi testado no Android se executar no IOS poderá apresentar alguns erros.**
+* Você precisa de uma chave de API do OpenWeatherMap, você pode obter uma criando uma conta em seu [site](https://home.openweathermap.org/users/sign_in).
 
 ## 🚀 Instalando Weather Forecast
 
@@ -51,6 +52,10 @@ git clone https://github.com/igorgoiis/weather-forecast.git
 - Entre na pasta e instale as dependências
 ```
 cd ./weather-forecast && yarn
+```
+- Crie um arquivo .env no diretório raiz do projeto, copie a linha abaixo para o arquivo e substitua YOUR_KEY por sua chave de [API do OpenWeatherMap](https://home.openweathermap.org/api_keys).
+```
+API_KEY=YOUR_KEY
 ```
 - Inicie o projeto
 ```
