@@ -9,7 +9,7 @@
 
 <br>
 
-> #### Este aplicativo foi desenvolvido para o teste técnico da Builders. É um app que pega os dados da [API do Open Weather](https://openweathermap.org/api) e mostra a previsão do tempo de hoje e dos próximos 3 dias do seu local utilizando a localizaçâo do smartphone.
+> #### Este aplicativo pega os dados da [API do Open Weather](https://openweathermap.org/api) e mostra a previsão do tempo de hoje e dos próximos 3 dias do seu local utilizando a localizaçâo do smartphone.
 
 <br>
 
